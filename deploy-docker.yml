@@ -18,6 +18,12 @@
     pip:
       name: docker-py
       state: present
+  - name: stop the conatiner
+      shell: docker stop mycontainer
+  - name: remove container
+      shell: docker rm mycontainer
+  - name: remove image
+      shell: docker image rmi techguftgu22231/image:0.01    
   - name: start the container
     docker_container:
       name: mycontainer
