@@ -11,7 +11,7 @@
       name: docker
       state: present
   - name: start docker
-    servive:
+    service:
       name: docker
       state: started
   - name: inatall docker-py python module
