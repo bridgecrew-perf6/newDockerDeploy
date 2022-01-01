@@ -23,5 +23,7 @@
       name: mycontainer
       image: techguftgu22231/image:0.01
       state: started
+      published_ports:
+          - 0.0.0.0:8080:8080
     
   
